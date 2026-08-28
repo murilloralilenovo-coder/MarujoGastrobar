@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MARUJO GASTROBAR</title>
+    <link rel="stylesheet" href="stayle.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            MARUJO
+            <span>GASTROBAR</span>
+        </div>
+
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#cardapio">Cardápio</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <!-- INÍCIO -->
+    <section id="inicio" class="inicio">
+        <div class="inicio-conteudo">
+            <span>Sabor em cada experiência.</span>
+
+        <h1>A melhor variedade do litoral</h1>
+            <p>
+                Carnes, frutos do mar, massas, pizzas, drinks e pratos
+                especiais em um ambiente único.
+            </p>
+
+            <a href="#cardapio" class="botao">Ver Cardápio</a>
+        </div>
+    </section>
+
+    <!-- CARDÁPIO -->
+    <section id="cardapio" class="cardapio">
+        <div class="titulo">
+            <span>NOSSO MENU</span>
+            <h2>Cardápio</h2>
+            <p>Escolha uma categoria para ver os pratos.</p>
+        </div>
+
+        <div class="filtros">
+            <button class="ativo" onclick="filtrar('Todos', this)">Todos</button>
+            <button onclick="filtrar('Bebidas', this)">Bebidas</button>
+            <button onclick="filtrar('Entradas', this)">Entradas</button>
+            <button onclick="filtrar('Porções', this)">Porções</button>
+            <button onclick="filtrar('Carnes', this)">Carnes</button>
+            <button onclick="filtrar('Massas', this)">Massas & Risotos</button>
+            <button onclick="filtrar('Peixes', this)">Peixes & Frutos do Mar</button>
+            <button onclick="filtrar('Especiais', this)">Especiais</button>
+            <button onclick="filtrar('Pizzas', this)">Pizzas</button>
+            <button onclick="filtrar('Guarnições', this)">Guarnições</button>
+            <button onclick="filtrar('Kids', this)">Kids</button>
+            <button onclick="filtrar('Lanches', this)">Lanches</button>
+            <button onclick="filtrar('Sobremesas', this)">Sobremesas</button>
+        </div>
+
+        <div id="menu"></div>
+    </section>
+
+    <!-- SOBRE -->
+    <section id="sobre" class="sobre">
+        <div>
+            <span>SOBRE NÓS</span>
+            <h2>Mais que um restaurante.</h2>
+
+            <p>
+                Uma experiência gastronômica com ingredientes selecionados,
+                pratos especiais, carnes, frutos do mar, pizzas e bebidas
+                para todos os momentos.
+            </p>
+        </div>
+    </section>
+
+ 
+    <section id="contato" class="contato">
+        <span>CONTATO</span>
+        <h2>Venha nos visitar</h2>
+
+
+<p>
+    <a data-local class="link-contato">
+        como chegar
+    </a>
+</p>
+
+<p>
+    <a data-whatsapp class="link-contato">
+        WhatsApp
+    </a>
+</p>
+
+<p>
+    <a data-instagram class="link-contato">
+        Instagram do restaurante
+    </a>
+</p>
+
+        <p class="pagamentos">
+            <strong>Aceitamos:</strong> Visa • MasterCard • Elo • Ticket Restaurante
+        </p>
+
+        <p>
+            quinta a terça<br>
+            11h às 23h
+        </p>
+    </section>
+
+    <footer>
+        <h3>MARUJO<span><br>GASTROBAR</span></h3>
+        <p>© 2026 Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="cardapio.js"></script>
+</body>
+
+</html>
